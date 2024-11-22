@@ -1,6 +1,5 @@
 package com.chunosov;
 
-import java.sql.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -47,14 +46,21 @@ public class Main {
         replaceNumbersInArray();
         System.out.println("=====================");
 
-        System.out.println("Создан метод greateArrayWithOneHundredInt:");
-        greateArrayWithOneHundredInt();
+        System.out.println("Создан метод greatArrayWithOneHundredInt:");
+        greatArrayWithOneHundredInt();
         System.out.println("=====================");
-
+//
         System.out.println("Создан метод iterationArray:");
         iterationArray();
         System.out.println("=====================");
 
+        System.out.println("Создан метод diagonalArrayWithOne:");
+        diagonalArrayWithOne();
+        System.out.println("=====================");
+
+        System.out.println("Создан метод createArrayNumbers:");
+        System.out.println(Arrays.toString(createArrayNumbers(2, 3)));
+        System.out.println("=====================");
 
 
     }
@@ -147,7 +153,7 @@ public class Main {
         System.out.println("Массив после изменения: " + Arrays.toString(arr));
     }
 
-    public static void greateArrayWithOneHundredInt() {
+    public static void greatArrayWithOneHundredInt() {
         int[] array = new int[100];
         for (int i = 0; i < array.length; i++) {
             array[i] = i + 1;
@@ -158,12 +164,35 @@ public class Main {
     public static void iterationArray() {
         int[] arrayNumbers = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < arrayNumbers.length; i++) {
-            if(arrayNumbers[i] < 6) {
+            if (arrayNumbers[i] < 6) {
                 arrayNumbers[i] = arrayNumbers[i] * 2;
             }
         }
         System.out.println(Arrays.toString(arrayNumbers));
     }
 
+    public static void diagonalArrayWithOne() {
+        int sizeArray = 6;
+        int[][] matrix = new int[sizeArray][sizeArray];
+        for (int i = 0; i < sizeArray; i++) {
+            matrix[i][i] = 1;
+            matrix[i][sizeArray - i - 1] = 1;
+        }
 
+        for (int i = 0; i < sizeArray; i++) {
+            for (int j = 0; j < sizeArray; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+    }
+
+    public static int[] createArrayNumbers(int len, int initialValue) {
+        int[] array = new int[len];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = initialValue;
+        }
+        return array;
+    }
 }
