@@ -1,5 +1,6 @@
 package com.chunosov;
 
+import java.sql.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -42,6 +43,19 @@ public class Main {
         System.out.println(getLeapYear(2024));
         System.out.println("=====================");
 
+        System.out.println("Создан метод replaceNumbersInArray:");
+        replaceNumbersInArray();
+        System.out.println("=====================");
+
+        System.out.println("Создан метод greateArrayWithOneHundredInt:");
+        greateArrayWithOneHundredInt();
+        System.out.println("=====================");
+
+        System.out.println("Создан метод iterationArray:");
+        iterationArray();
+        System.out.println("=====================");
+
+
 
     }
 
@@ -74,7 +88,7 @@ public class Main {
     public static void compareNumbers() {
         int a = 1;
         int b = 4;
-        if(a >= b ){
+        if (a >= b) {
             System.out.println("a >= b");
         } else {
             System.out.println("a < b");
@@ -83,7 +97,7 @@ public class Main {
 
     public static boolean sumTwoNumbers(int number1, int number2) {
         int result = number1 + number2;
-        if(result >= 10 && result <= 20 ) {
+        if (result >= 10 && result <= 20) {
             return true;
         } else {
             return false;
@@ -100,7 +114,7 @@ public class Main {
 
     public static boolean rationalNumberReturn(int number) {
         if (number < 0) {
-           return true;
+            return true;
         } else {
             return false;
         }
@@ -119,5 +133,37 @@ public class Main {
             return false;
         }
     }
+
+    public static void replaceNumbersInArray() {
+        int[] arr = {1, 0, 0, 1, 0, 0};
+        System.out.println("Массив до изменения: " + Arrays.toString(arr));
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 1) {
+                arr[i] = 0;
+            } else if (arr[i] == 0) {
+                arr[i] = 1;
+            }
+        }
+        System.out.println("Массив после изменения: " + Arrays.toString(arr));
+    }
+
+    public static void greateArrayWithOneHundredInt() {
+        int[] array = new int[100];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        System.out.println(Arrays.toString(array));
+    }
+
+    public static void iterationArray() {
+        int[] arrayNumbers = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < arrayNumbers.length; i++) {
+            if(arrayNumbers[i] < 6) {
+                arrayNumbers[i] = arrayNumbers[i] * 2;
+            }
+        }
+        System.out.println(Arrays.toString(arrayNumbers));
+    }
+
 
 }
