@@ -30,6 +30,18 @@ public class Main {
         rationalNumber(0);
         System.out.println("=====================");
 
+        System.out.println("Создан метод rationalNumberReturn:");
+        System.out.println(rationalNumberReturn(56));
+        System.out.println("=====================");
+
+        System.out.println("Создан метод printLine:");
+        printLine("qwe", 3);
+        System.out.println("=====================");
+
+        System.out.println("Создан метод getLeapYear:");
+        System.out.println(getLeapYear(2024));
+        System.out.println("=====================");
+
 
     }
 
@@ -86,6 +98,26 @@ public class Main {
         }
     }
 
+    public static boolean rationalNumberReturn(int number) {
+        if (number < 0) {
+           return true;
+        } else {
+            return false;
+        }
+    }
 
+    public static void printLine(String str, int number) {
+        for (int i = 0; i < number; i++) {
+            System.out.println(str);
+        }
+    }
+
+    public static boolean getLeapYear(int year) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
