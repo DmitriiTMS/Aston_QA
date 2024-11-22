@@ -5,16 +5,29 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Создать метод printThreeWords:");
+        System.out.println("Создан метод printThreeWords:");
         printThreeWords();
         System.out.println("=====================");
 
-        System.out.println("Создать метод checkSumSign:");
+        System.out.println("Создан метод checkSumSign:");
         checkSumSign();
         System.out.println("=====================");
 
-        System.out.println("Создать метод printColor:");
+        System.out.println("Создан метод printColor:");
         printColor();
+        System.out.println("=====================");
+
+        System.out.println("Создан метод compareNumbers:");
+        compareNumbers();
+        System.out.println("=====================");
+
+        System.out.println("Создан метод sumTwoNumbers:");
+        boolean resultMethod = sumTwoNumbers(2,8);
+        System.out.println(resultMethod);
+        System.out.println("=====================");
+
+        System.out.println("Создан метод rationalNumber:");
+        rationalNumber(0);
         System.out.println("=====================");
 
 
@@ -45,5 +58,34 @@ public class Main {
             System.out.println("Зелёный");
         }
     }
+
+    public static void compareNumbers() {
+        int a = 1;
+        int b = 4;
+        if(a >= b ){
+            System.out.println("a >= b");
+        } else {
+            System.out.println("a < b");
+        }
+    }
+
+    public static boolean sumTwoNumbers(int number1, int number2) {
+        int result = number1 + number2;
+        if(result >= 10 && result <= 20 ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static void rationalNumber(int number) {
+        if (number < 0) {
+            System.out.println("Число " + number + " отрицательное");
+        } else {
+            System.out.println("Число " + number + " положительное");
+        }
+    }
+
+
 
 }
