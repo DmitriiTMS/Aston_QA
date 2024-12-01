@@ -1,17 +1,20 @@
 package com.chunosov.park;
 
+import java.math.BigDecimal;
+
 public class Park {
 
     public class Attraction {
         private String name;
         private String workingHours;
-        private double price;
+        private BigDecimal price;
 
-        public Attraction(String name, String workingHours, double price) {
+        public Attraction(String name, String workingHours, BigDecimal price) {
             this.name = name;
             this.workingHours = workingHours;
             this.price = price;
         }
+
 
         public String getName() {
             return name;
@@ -29,11 +32,11 @@ public class Park {
             this.workingHours = workingHours;
         }
 
-        public double getPrice() {
+        public BigDecimal getPrice() {
             return price;
         }
 
-        public void setPrice(double price) {
+        public void setPrice(BigDecimal price) {
             this.price = price;
         }
 

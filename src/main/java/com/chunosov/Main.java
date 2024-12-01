@@ -2,6 +2,7 @@ package com.chunosov;
 
 import com.chunosov.park.Park;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 
 public class Main {
@@ -9,7 +10,7 @@ public class Main {
         System.out.println("===============TASK 1======================");
         Employee employee = new Employee("Jonov", "Jon", "Jonovich",
                 "develop", "jon@gmail.com", "+133141414141414", 1000.20, 20);
-        String infoEmployee =  employee.getEmployeeInformation();
+        String infoEmployee = employee.getEmployeeInformation();
         System.out.println(infoEmployee);
 
 
@@ -29,7 +30,8 @@ public class Main {
         System.out.println(Arrays.toString(employeesArray));
 
         System.out.println("===============TASK 3======================");
-        Park.Attraction attraction = new Park().new Attraction("Karusel", "10.00 - 20.00", 23.23);
+        Park.Attraction attraction = new Park().new Attraction("Karusel", "10.00 - 20.00",
+                new BigDecimal("23.23"));
         System.out.println(attraction);
     }
 }
