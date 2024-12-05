@@ -5,21 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ece77d4d-cb74-4925-9c0e-07bc3f72ff0d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_11_2024_17_29_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_25_11_2024_17_29__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chunosov/task_1/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chunosov/task_1/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chunosov/task_1/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chunosov/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chunosov/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chunosov/park/Park$Attraction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chunosov/park/Park.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chunosov/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chunosov/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +37,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "task__5",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
