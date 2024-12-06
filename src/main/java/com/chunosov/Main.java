@@ -3,6 +3,9 @@ package com.chunosov;
 import com.chunosov.task_1.Animal;
 import com.chunosov.task_1.Cat;
 import com.chunosov.task_1.Dog;
+import com.chunosov.task_2.Circle;
+import com.chunosov.task_2.Rectangle;
+import com.chunosov.task_2.Triangle;
 
 public class Main {
     public static void main(String[] args) {
@@ -62,6 +65,23 @@ public class Main {
         System.out.println("#############################################");
 //        task_2
         System.out.println("ЗАДАНИЕ №2");
+        System.out.println("========== КРУГ ==========");
+        Circle circle = new Circle(5.0);
+        circle.setFillColor("Red");
+        circle.setBorderColor("Black");
+        circle.printInfo();
+
+        System.out.println("========== ПРЯМОУГОЛЬНИК ==========");
+        Rectangle rectangle = new Rectangle(4.0, 6.0);
+        rectangle.setFillColor("Blue");
+        rectangle.setBorderColor("Green");
+        rectangle.printInfo();
+
+        System.out.println("========== ТРЕУГОЛЬНИК ==========");
+        Triangle triangle = new Triangle(3.0, 4.0, 5.0);
+        triangle.setFillColor("Yellow");
+        triangle.setBorderColor("Orange");
+        triangle.printInfo();
 
     }
 }
