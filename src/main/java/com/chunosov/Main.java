@@ -26,8 +26,19 @@ public class Main {
         for (String key : wordCounts.keySet()) {
             System.out.println("Строка \"" + key + "\" встречается " + wordCounts.get(key) + " раз(а)");
         }
+        System.out.println("========== Task_2 ==========");
+
+        PhoneBookNumbers phoneBook = new PhoneBookNumbers();
+
+        phoneBook.add("Иванов", "123456");
+        phoneBook.add("Петров", "654321");
+        phoneBook.add("Иванов", "111222");
+        phoneBook.add("Сидоров", "333444");
 
 
-
+        System.out.println("Номера Иванова: " + phoneBook.get("Иванов"));
+        System.out.println("Номера Петрова: " + phoneBook.get("Петров"));
+        System.out.println("Номера Сидорова: " + phoneBook.get("Сидоров"));
+        System.out.println("Номера Смирнова (нет записи): " + phoneBook.get("Смирнов"));
     }
 }
